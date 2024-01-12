@@ -26,7 +26,7 @@ ex:
 
 Now you can type backup.sh from anywhere and the script will run. Same with backup_on_change.sh
 
-## Optional:
+## Optional: (not working yet, need more debugging)
 6. To make backup_on_change.sh run on startup
 
 `crontab -e`
