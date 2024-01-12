@@ -33,4 +33,4 @@ Now you can type backup.sh from anywhere and the script will run. Same with back
 
 Then add the following line to the file:
 
-@reboot /PATH_TO_SCIPT
+@reboot sh /PATH_TO_SCIPT
