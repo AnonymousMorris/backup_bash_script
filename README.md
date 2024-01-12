@@ -28,4 +28,5 @@ Now you can type backup.sh from anywhere and the script will run. Same with back
 `crontab -e`
 
 Then add the following line to the file:
+
 @reboot /PATH_TO_SCIPT
