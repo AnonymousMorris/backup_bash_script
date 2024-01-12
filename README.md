@@ -6,8 +6,9 @@ The backup_on_change uses inotifywait to wait for a file to be changed in the di
 
 ## Setup:
 1. create a bin dir in the home dir to place the scripts or place them in the usr/local/bin.
-2. Wherever you decide to place the scripts make sure that directory is included in the $PATH.
-   1. To check type:
+2. Edit the bash script to fill out the variables for path to directory to backup, remote server, etc
+3. Wherever you decide to place the scripts make sure that directory is included in the $PATH.
+   1. To check your path:
 `echo $PATH`
 
    2. If your directory is not included in the $PATH. Include it by adding the following line to the .bashrc file in the home directory 
@@ -16,14 +17,17 @@ The backup_on_change uses inotifywait to wait for a file to be changed in the di
 ex:
 `export PATH=$PATH:/home/Morris/bin`
 
-3. make sure the bash scripts are executables if they are not use
+4. set up passwordless ssh if you haven't
+  1. `ssh-keygen`
+  2. `ssh-copy-id user@hostname`
+5. make sure the bash scripts are executables if they are not use
 `chmod +x backup.sh`
 `chmod +x backup_on_change.sh`
 
 Now you can type backup.sh from anywhere and the script will run. Same with backup_on_change.sh
 
 ## Optional:
-4. To make backup_on_change.sh run on startup
+6. To make backup_on_change.sh run on startup
 
 `crontab -e`
 
