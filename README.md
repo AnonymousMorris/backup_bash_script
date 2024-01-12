@@ -6,11 +6,11 @@ The backup_on_change uses inotifywait to wait for a file to be changed in the di
 
 ## Setup:
 1. create a bin dir in the home dir to place the scripts or place them in the usr/local/bin.
-2. Wherever you decide to place the scripts make sure that directory is included in the $PATH. To check type:
+2. Wherever you decide to place the scripts make sure that directory is included in the $PATH.
+   1. To check type:
 `echo $PATH`
 
-2.5. If your directory is not included in the $PATH. Include it by adding the following line to the .bashrc file in the home directory 
-
+  2. If your directory is not included in the $PATH. Include it by adding the following line to the .bashrc file in the home directory 
 `export PATH=$PATH:/PATH_YOU_WANT_TO_INCLUDE`
 
 ex:
