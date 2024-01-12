@@ -10,7 +10,7 @@ The backup_on_change uses inotifywait to wait for a file to be changed in the di
    1. To check type:
 `echo $PATH`
 
-  2. If your directory is not included in the $PATH. Include it by adding the following line to the .bashrc file in the home directory 
+   2. If your directory is not included in the $PATH. Include it by adding the following line to the .bashrc file in the home directory 
 `export PATH=$PATH:/PATH_YOU_WANT_TO_INCLUDE`
 
 ex:
