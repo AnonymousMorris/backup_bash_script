@@ -20,7 +20,7 @@ ex:
 `chmod +x backup.sh`
 `chmod +x backup_on_change.sh`
 
-### Now you can type backup.sh from anywhere and the script will run. Same with backup_on_change.sh
+Now you can type backup.sh from anywhere and the script will run. Same with backup_on_change.sh
 
 ## Optional:
 4. To make backup_on_change.sh run on startup
