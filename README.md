@@ -1,10 +1,10 @@
 # backup_bash_script
 A simple bash script to backup my notes directory onto the school ssh server
-
+## What it does
 The backup.sh file uses rsync to sync the contents of the directory specificied onto a remote directory on a server you have ssh access to. 
 The backup_on_change uses inotifywait to wait for a file to be changed in the directory specified and calls the backup when a file in that directory is changed.
 
-#Setup:
+## Setup:
 create a bin dir in the home dir to place the scripts or place them in the usr/local/bin.
 Wherever you decide to place the scripts make sure that directory is included in the $PATH. To check type:
 `echo $PATH`
